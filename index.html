@@ -21,6 +21,7 @@
   <script src="src/models/video.js"></script>
   <script src="src/collections/videos.js"></script>
   <script src="src/lib/templateUrl.js"></script>
+  <script src="src/data/exampleVideoData.js"></script>
 
   <script src="src/views/app.js"></script>
   <script src="src/views/search.js"></script>
@@ -29,10 +30,17 @@
   <script src="src/views/videoPlayer.js"></script>
 
   <script>
-    backboneReady(() => {
-      new AppView();
-    });
+backboneReady(() => {
+  new AppView();
+  
+});
   </script>
+<!--       <script>
+      $(function(){
+        var videos = new Videos(exampleVideoData);
+        new AppView({el: $('#main'), collection: videos}).render();
+      });
+    </script> -->
 
 </body>
 </html>
