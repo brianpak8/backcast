@@ -17,11 +17,11 @@ var AppView = Backbone.View.extend({
     this.$el.html(this.template());
     //do something here!!!!
     new VideoListView({
-      videos: this.videos,
+      collection: this.videos,
       el: this.$('.list')
     }).render();
-    // console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH', videoListView);
-    // console.log('222222222222222222', this.videos);
+    console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH', VideoListView);
+    console.log('222222222222222222', this.videos);
     return this;
   },
 
