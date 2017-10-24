@@ -5,9 +5,11 @@ var VideoListView = Backbone.View.extend({
   // },
   
   render: function() {
-    for (var i = 0; i < videos.length; i++) {
-      new VideoListEntryView({video: collection[i]});
-    }
+    // console.log('5555555555555555555555555', this.videos);
+    // for (var i = 0; i < videos.length; i++) {
+    //   new VideoListEntryView({video: videos[i]});
+    // }
+    console.log('HALPPPPPPPPP', this.videos);
     this.$el.children().detach();
     this.$el.html(this.template());
     return this;
